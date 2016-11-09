@@ -6,10 +6,10 @@
 <!-- Bootstrap core css file -->
 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <!-- Create a simple CodeMirror instance -->
-<link rel="stylesheet" href="codemirror/lib/codemirror.css">
+<link rel="stylesheet" href="/wpyide/codemirror/lib/codemirror.css">
 <style>
 body {
-	background: #DDD url(imgs/python_bg.png) no-repeat fixed center;
+	background: #DDD url(/wpyide/imgs/python_bg.png) no-repeat fixed center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -40,20 +40,20 @@ pre {
 			<a class="navbar-brand" href="#">
 				<span>
 					WPyIDE
-					<img height="20" alt="Brand" src="imgs/py3.png">
+					<img height="20" alt="Brand" src="/wpyide/imgs/py3.png">
 				</span>
 			</a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar-ex-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li>
-					<a href="/">IDE</a>
+					<a href="/wpyide/">IDE</a>
 				</li>
 				<li>
-					<a href="/tutorial.html">Tutorial</a>
+					<a href="/wpyide/tutorial.html">Tutorial</a>
 				</li>
 				<li class="active">
-					<a href="/help.html">Help</a>
+					<a href="/wpyide/help.html">Help</a>
 				</li>
 			</ul>
 		</div>
@@ -78,8 +78,8 @@ pre {
 </html>
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="codemirror/lib/codemirror.js"></script>
-<script src="codemirror/mode/python/python.js"></script>
+<script src="/wpyide/codemirror/lib/codemirror.js"></script>
+<script src="/wpyide/codemirror/mode/python/python.js"></script>
 <script>
 var xmlhttp;
 var editor;
@@ -102,10 +102,10 @@ xmlhttp.onreadystatechange=function() {
 		});
 	}
 }
-xmlhttp.open("GET","help.py",true);
+xmlhttp.open("GET","/wpyide/help.py",true);
 xmlhttp.send();
 </script>
-<script src="Brython/brython.js"></script>
+<script src="/wpyide/Brython/brython.js"></script>
 <script id="pythonTmp" type="text/python3">
 </script>
 <script>
